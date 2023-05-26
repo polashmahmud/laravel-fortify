@@ -16,6 +16,12 @@
         @auth
         <li><a href="">{{ auth()->user()->name }}</a></li>
         <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+        <li>
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit">Logout</button>
+            </form>
+        </li>
         @endauth
         
         <li><a href="{{ route('home') }}">Home</a></li>
