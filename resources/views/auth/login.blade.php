@@ -24,5 +24,10 @@
         <div>
             <button type="submit">Login</button>
         </div>
+
+        <div>
+            <a href="{{ route('password.request') }}">Forgeeting password</a>
+        </div>
+
     </form>
 </x-app-layout>
