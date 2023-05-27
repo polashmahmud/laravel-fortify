@@ -20,6 +20,10 @@
             @enderror
         </div>
 
+        <div>
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
 
         <div>
             <button type="submit">Login</button>
