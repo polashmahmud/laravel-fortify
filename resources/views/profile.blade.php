@@ -13,6 +13,15 @@
         </div>
 
         <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" value="{{ auth()->user()->username }}">
+
+            @error('username')
+                <div>{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div>
             <label for="email">Email</label>
             <input type="email" name="email" id="email" value="{{ auth()->user()->email }}">
             
