@@ -16,6 +16,7 @@
         @auth
         <li><a href="{{ route('profile') }}">{{ auth()->user()->name }}</a></li>
         <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ route('auth.password') }}">Change Password</a></li>
         <li><a href="{{ route('account.delete') }}">Account Delete</a></li>
         <li>
             <form action="{{ route('logout') }}" method="post">
