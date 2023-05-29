@@ -3,8 +3,8 @@
         @csrf
 
         <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" value="{{ old('email') }}">
+            <label for="email">Email or Username</label>
+            <input type="text" name="email" id="email" value="{{ old('email') }}">
             
             @error('email')
                 <div>{{ $message }}</div>
