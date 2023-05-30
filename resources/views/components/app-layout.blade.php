@@ -18,6 +18,7 @@
         <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
         <li><a href="{{ route('auth.password') }}">Change Password</a></li>
         <li><a href="{{ route('account.delete') }}">Account Delete</a></li>
+        <li><a href="{{ route('auth.two-factory') }}">Two factory authentication</a></li>
         <li>
             <form action="{{ route('logout') }}" method="post">
                 @csrf
@@ -25,7 +26,7 @@
             </form>
         </li>
         @endauth
-        
+
         <li><a href="{{ route('home') }}">Home</a></li>
     </ul>
     {{ $slot }}

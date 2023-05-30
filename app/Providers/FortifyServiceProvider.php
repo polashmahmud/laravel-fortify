@@ -54,6 +54,10 @@ class FortifyServiceProvider extends ServiceProvider
                 return $user;
             }
         });
+
+        Fortify::twoFactorChallengeView(function () {
+            return view('auth.two-factory-challenge');
+        });
     }
 
     /**
